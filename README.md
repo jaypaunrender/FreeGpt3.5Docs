@@ -38,7 +38,7 @@ See also
 - ✅ Code linting using [flake8](https://flake8.pycqa.org/en/latest/)
 - 📊 Code coverage reports using [codecov](https://about.codecov.io/sign-up/)
 - 🛳️ Automatic release to [PyPI](https://pypi.org) using [twine](https://twine.readthedocs.io/en/latest/) and github actions.
-- 🎯 Entry points to execute your program using `python -m <project_name>` or `$ project_name` with basic CLI argument parsing.
+- 🎯 Entry points to execute your program using `python -m <freegpt3.5docs>` or `$ freegpt3.5docs` with basic CLI argument parsing.
 - 🔄 Continuous integration using [Github Actions](.github/workflows/) with jobs to lint, test and release your project on Linux, Mac and Windows environments.
 
 > Curious about architectural decisions on this template? read [ABOUT_THIS_TEMPLATE.md](ABOUT_THIS_TEMPLATE.md)  
@@ -49,51 +49,51 @@ See also
 <!--  DELETE THE LINES ABOVE THIS AND WRITE YOUR PROJECT README BELOW -->
 
 ---
-# project_name
+# freegpt3.5docs
 
-[![codecov](https://codecov.io/gh/author_name/project_urlname/branch/main/graph/badge.svg?token=project_urlname_token_here)](https://codecov.io/gh/author_name/project_urlname)
-[![CI](https://github.com/author_name/project_urlname/actions/workflows/main.yml/badge.svg)](https://github.com/author_name/project_urlname/actions/workflows/main.yml)
+[![codecov](https://codecov.io/gh/jaypaunrender/FreeGpt3.5Docs/branch/main/graph/badge.svg?token=FreeGpt3.5Docs_token_here)](https://codecov.io/gh/jaypaunrender/FreeGpt3.5Docs)
+[![CI](https://github.com/jaypaunrender/FreeGpt3.5Docs/actions/workflows/main.yml/badge.svg)](https://github.com/jaypaunrender/FreeGpt3.5Docs/actions/workflows/main.yml)
 
-project_description
+Awesome freegpt3.5docs created by jaypaunrender
 
 ## Install
 
 from source
 ```bash
-git clone https://github.com/author_name/project_urlname project_name
-cd project_name
+git clone https://github.com/jaypaunrender/FreeGpt3.5Docs freegpt3.5docs
+cd freegpt3.5docs
 make install
 ```
 
 from pypi
 
 ```bash
-pip install project_name
+pip install freegpt3.5docs
 ```
 
 ## Executing
 
 ```bash
-$ project_name run --port 8080
+$ freegpt3.5docs run --port 8080
 ```
 
 or
 
 ```bash
-python -m project_name run --port 8080
+python -m freegpt3.5docs run --port 8080
 ```
 
 or
 
 ```bash
-$ uvicorn project_name:app
+$ uvicorn freegpt3.5docs:app
 ```
 
 ## CLI
 
 ```bash
-❯ project_name --help
-Usage: project_name [OPTIONS] COMMAND [ARGS]...
+❯ freegpt3.5docs --help
+Usage: freegpt3.5docs [OPTIONS] COMMAND [ARGS]...
 
 Options:
   --install-completion [bash|zsh|fish|powershell|pwsh]
@@ -112,8 +112,8 @@ Commands:
 ### Creating a user
 
 ```bash
-❯ project_name create-user --help
-Usage: project_name create-user [OPTIONS] USERNAME PASSWORD
+❯ freegpt3.5docs create-user --help
+Usage: freegpt3.5docs create-user [OPTIONS] USERNAME PASSWORD
 
   Create user
 
@@ -129,7 +129,7 @@ Options:
 **IMPORTANT** To create an admin user on the first run:
 
 ```bash
-project_name create-user admin admin --superuser
+freegpt3.5docs create-user admin admin --superuser
 ```
 
 ### The Shell
@@ -137,7 +137,7 @@ project_name create-user admin admin --superuser
 You can enter an interactive shell with all the objects imported.
 
 ```bash
-❯ project_name shell       
+❯ freegpt3.5docs shell       
 Auto imports: ['app', 'settings', 'User', 'engine', 'cli', 'create_user', 'select', 'session', 'Content']
 
 In [1]: session.query(Content).all()
@@ -151,12 +151,12 @@ Out[3]: [Content(text='string', title='string', created_time='2021-09-14T19:25:0
 
 ## API
 
-Run with `project_name run` and access http://127.0.0.1:8000/docs
+Run with `freegpt3.5docs run` and access http://127.0.0.1:8000/docs
 
 ![](https://raw.githubusercontent.com/rochacbruno/fastapi-project-template/master/docs/api.png)
 
 
-**For some api calls you must authenticate** using the user created with `project_name create-user`.
+**For some api calls you must authenticate** using the user created with `freegpt3.5docs create-user`.
 
 ## Testing
 
@@ -189,18 +189,18 @@ tests/test_user_api.py::test_user_create PASSED                           [100%]
 ----------- coverage: platform linux, python 3.9.6-final-0 -----------
 Name                              Stmts   Miss  Cover
 -----------------------------------------------------
-project_name/__init__.py              4      0   100%
-project_name/app.py                  16      1    94%
-project_name/cli.py                  21      0   100%
-project_name/config.py                5      0   100%
-project_name/db.py                   10      0   100%
-project_name/models/__init__.py       0      0   100%
-project_name/models/content.py       47      1    98%
-project_name/routes/__init__.py      11      0   100%
-project_name/routes/content.py       52     25    52%
-project_name/routes/security.py      15      1    93%
-project_name/routes/user.py          52     26    50%
-project_name/security.py            103     12    88%
+freegpt3.5docs/__init__.py              4      0   100%
+freegpt3.5docs/app.py                  16      1    94%
+freegpt3.5docs/cli.py                  21      0   100%
+freegpt3.5docs/config.py                5      0   100%
+freegpt3.5docs/db.py                   10      0   100%
+freegpt3.5docs/models/__init__.py       0      0   100%
+freegpt3.5docs/models/content.py       47      1    98%
+freegpt3.5docs/routes/__init__.py      11      0   100%
+freegpt3.5docs/routes/content.py       52     25    52%
+freegpt3.5docs/routes/security.py      15      1    93%
+freegpt3.5docs/routes/user.py          52     26    50%
+freegpt3.5docs/security.py            103     12    88%
 -----------------------------------------------------
 TOTAL                               336     66    80%
 
@@ -222,7 +222,7 @@ make fmt   # formats the code
 This project uses [Dynaconf](https://dynaconf.com) to manage configuration.
 
 ```py
-from project_name.config import settings
+from freegpt3.5docs.config import settings
 ```
 
 ## Acessing variables
@@ -251,14 +251,14 @@ dynaconf_merge = true
 echo = true
 ```
 
-> `dynaconf_merge` is a boolean that tells if the settings should be merged with the default settings defined in project_name/default.toml.
+> `dynaconf_merge` is a boolean that tells if the settings should be merged with the default settings defined in freegpt3.5docs/default.toml.
 
 ### As environment variables
 ```bash
-export PROJECT_NAME_KEY=value
-export PROJECT_NAME_KEY="@int 42"
-export PROJECT_NAME_KEY="@jinja {{ this.db.uri }}"
-export PROJECT_NAME_DB__uri="@jinja {{ this.db.uri | replace('db', 'data') }}"
+export freegpt3.5docs_KEY=value
+export freegpt3.5docs_KEY="@int 42"
+export freegpt3.5docs_KEY="@jinja {{ this.db.uri }}"
+export freegpt3.5docs_DB__uri="@jinja {{ this.db.uri | replace('db', 'data') }}"
 ```
 
 ### Secrets
@@ -272,7 +272,7 @@ can read those variables.
 ### Switching environments
 
 ```bash
-PROJECT_NAME_ENV=production project_name run
+freegpt3.5docs_ENV=production freegpt3.5docs run
 ```
 
 Read more on https://dynaconf.com

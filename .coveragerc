@@ -1,8 +1,8 @@
 [run]
-source = project_name
+source = freegpt3.5docs
 
 [report]
 omit =
     */python?.?/*
     */site-packages/nose/*
-    project_name/__main__.py
+    freegpt3.5docs/__main__.py
